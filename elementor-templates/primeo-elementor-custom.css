@@ -1,0 +1,43 @@
+/* PRIMEO — CSS pour Elementor */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primeo-accent: #DB1215;
+    --primeo-bg-dark: #000000;
+    --primeo-text: #000000;
+    --primeo-border: #ebebeb;
+}
+
+.elementor-page body {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    [style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    [style*="grid-template-columns:repeat(4"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    [style*="grid-template-columns: 2fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    [style*="grid-template-columns:2fr"] {
+        grid-template-columns: 1fr !important;
+    }
+}

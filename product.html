@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survêtement Green Eagles | PRIMEO</title>
+    <meta name="description"
+        content="Survêtement Green Eagles — Streetwear premium par PRIMEO. Tissu technique, coupe athlétique, design exclusif.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="marquee">
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo"><span class="logo-text">PRIMEO</span></a>
+            <nav class="header-nav">
+                <a href="index.html">Accueil</a>
+                <a href="nouveautes.html">Nouveautés</a>
+                <a href="homme.html">Homme</a>
+                <a href="femme.html">Femme</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="soldes.html" class="sale">Soldes</a>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="searchToggle"><i class="fas fa-search"></i></a>
+                <a href="compte.html"><i class="far fa-user"></i></a>
+                <a href="favoris.html"><i class="far fa-heart"></i><span class="badge wishlist-count">0</span></a>
+                <a href="panier.html"><i class="fas fa-shopping-bag"></i><span class="badge cart-count">0</span></a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+            <nav class="mobile-menu-nav">
+                <a href="index.html">Accueil</a>
+                <a href="nouveautes.html">Nouveautés</a>
+                <a href="homme.html">Homme</a>
+                <a href="femme.html">Femme</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="soldes.html" class="sale">Soldes</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL -->
+    <section class="product-detail-section">
+        <div class="container">
+            <nav class="breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <a
+                    href="collections.html">Collections</a> <span>/</span> <span>Survêtement Green Eagles</span></nav>
+
+            <div class="product-detail">
+                <!-- Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <div class="thumb active" onclick="changeImage(this)"><img src="images/product-tracksuit.png"
+                                alt="Vue 1"></div>
+                        <div class="thumb" onclick="changeImage(this)"><img src="images/product-tracksuit.png"
+                                alt="Vue 2"></div>
+                        <div class="thumb" onclick="changeImage(this)"><img src="images/product-tracksuit.png"
+                                alt="Vue 3"></div>
+                        <div class="thumb" onclick="changeImage(this)"><img src="images/product-tracksuit.png"
+                                alt="Vue 4"></div>
+                    </div>
+                    <div class="gallery-main">
+                        <span class="product-badge">Nouveau</span>
+                        <img id="mainImage" src="images/product-tracksuit.png" alt="Survêtement Green Eagles">
+                        <button class="gallery-zoom" title="Zoom"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="product-detail-info">
+                    <div class="product-meta-top">
+                        <span class="product-brand">PRIMEO</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(24 avis)</span>
+                        </div>
+                    </div>
+                    <h1 class="product-detail-title">Survêtement Green Eagles</h1>
+                    <div class="product-detail-price">
+                        <span class="price-current">$161.00</span>
+                        <span class="price-tax">Taxes incluses</span>
+                    </div>
+
+                    <div class="product-description-short">
+                        <p>Le survêtement Green Eagles est conçu pour les athlètes urbains qui recherchent le parfait
+                            équilibre entre performance et style. Tissu technique respirant avec finitions premium.</p>
+                    </div>
+
+                    <div class="product-option">
+                        <label>Couleur: <strong>Noir / Vert</strong></label>
+                        <div class="color-swatches">
+                            <button class="swatch active" style="background:#1a1a1a;" title="Noir / Vert"></button>
+                            <button class="swatch" style="background:#2c3e50;" title="Bleu Marine"></button>
+                            <button class="swatch" style="background:#4a4a4a;" title="Gris Anthracite"></button>
+                        </div>
+                    </div>
+
+                    <div class="product-option">
+                        <label>Taille: <a href="#" class="size-guide-link">Guide des tailles</a></label>
+                        <div class="size-buttons">
+                            <button class="size-btn">S</button>
+                            <button class="size-btn active">M</button>
+                            <button class="size-btn">L</button>
+                            <button class="size-btn">XL</button>
+                            <button class="size-btn">XXL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-option">
+                        <label>Quantité</label>
+                        <div class="qty-selector">
+                            <button class="qty-btn" onclick="updateQty(-1)">−</button>
+                            <input type="number" id="qtyInput" value="1" min="1" max="10">
+                            <button class="qty-btn" onclick="updateQty(1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product-actions-detail">
+                        <button class="btn btn-dark btn-full"><i class="fas fa-shopping-bag"></i> Ajouter au
+                            Panier</button>
+                        <button class="btn-wishlist-lg"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <div class="buy-now-row">
+                        <button class="btn btn-accent btn-full">Acheter Maintenant</button>
+                    </div>
+
+                    <div class="product-guarantees">
+                        <div class="guarantee-item"><i class="fas fa-truck"></i> Livraison gratuite dès 99$</div>
+                        <div class="guarantee-item"><i class="fas fa-undo"></i> Retours gratuits 30 jours</div>
+                        <div class="guarantee-item"><i class="fas fa-shield-alt"></i> Paiement 100% sécurisé</div>
+                        <div class="guarantee-item"><i class="fas fa-credit-card"></i> Paiement en 3x sans frais</div>
+                    </div>
+
+                    <div class="product-share">
+                        <span>Partager:</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT TABS -->
+    <section class="section product-tabs-section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="details">Détails & Entretien</button>
+                <button class="tab-btn" data-tab="reviews">Avis (24)</button>
+                <button class="tab-btn" data-tab="shipping">Livraison</button>
+            </div>
+            <div class="tab-content active" id="tab-description">
+                <h3>Description du produit</h3>
+                <p>Le survêtement Green Eagles de PRIMEO combine style streetwear et performance athlétique. Fabriqué à
+                    partir d'un mélange de coton premium et de polyester technique, il offre un confort exceptionnel
+                    tout au long de la journée.</p>
+                <ul>
+                    <li>Tissu technique respirant 280g/m²</li>
+                    <li>Coupe semi-ajustée (Athletic Fit)</li>
+                    <li>Zip intégral avec tirette en métal gravée PRIMEO</li>
+                    <li>Poignets et chevilles côtelés pour un maintien optimal</li>
+                    <li>2 poches latérales zippées + 1 poche intérieure</li>
+                    <li>Logo PRIMEO brodé sur la poitrine</li>
+                    <li>Design exclusif « Green Eagles »</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab-details">
+                <h3>Composition & Entretien</h3>
+                <p><strong>Composition:</strong> 65% Coton premium, 30% Polyester technique, 5% Élasthanne</p>
+                <p><strong>Poids:</strong> 280g/m²</p>
+                <p><strong>Entretien:</strong></p>
+                <ul>
+                    <li>Lavage en machine à 30°C</li>
+                    <li>Ne pas utiliser de javel</li>
+                    <li>Séchage à plat recommandé</li>
+                    <li>Repassage à basse température</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab-reviews">
+                <h3>Avis clients (24)</h3>
+                <div class="review-summary">
+                    <div class="review-avg"><span class="big-rating">4.7</span><span>/5</span></div>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Karim M.</strong>
+                        <span class="review-date">il y a 3 jours</span>
+                    </div>
+                    <div class="stars-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>Qualité incroyable ! Le tissu est épais et bien fini. La coupe est parfaite, j'ai pris M et ça
+                        taille parfaitement. Je recommande à 100%.</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Léa D.</strong>
+                        <span class="review-date">il y a 1 semaine</span>
+                    </div>
+                    <div class="stars-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    <p>Très beau survêtement, le design est top. Livraison rapide en plus. Seul bémol : j'aurais préféré
+                        une poche arrière.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-shipping">
+                <h3>Informations de Livraison</h3>
+                <ul>
+                    <li><strong>France métropolitaine:</strong> 2-3 jours ouvrés (Gratuit dès 99$, sinon 4.95$)</li>
+                    <li><strong>Canada:</strong> 5-7 jours ouvrés (Gratuit dès 150$, sinon 9.95$)</li>
+                    <li><strong>Europe:</strong> 4-6 jours ouvrés (Gratuit dès 150$, sinon 7.95$)</li>
+                    <li><strong>International:</strong> 7-14 jours ouvrés (Frais calculés à la commande)</li>
+                </ul>
+                <p style="margin-top:1.5rem;color:var(--color-text-muted);">Suivi de colis inclus avec chaque commande.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section" style="background:var(--color-bg-alt);">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Vous aimerez aussi</h2>
+                <a href="collections.html" class="section-link">Voir tout <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="products-grid reveal">
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-jersey.png" alt="Maillot Black Gold">
+                            <div class="product-actions"><button><i class="far fa-heart"></i></button><button><i
+                                        class="far fa-eye"></i></button></div>
+                            <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Maillot Black Gold Edition</h4>
+                            <div class="product-price"><span class="current">$96.00</span></div>
+                            <p class="product-colors">2 couleurs</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-hoodie.png" alt="Hoodie Oversize">
+                            <div class="product-actions"><button><i class="far fa-heart"></i></button><button><i
+                                        class="far fa-eye"></i></button></div>
+                            <div class="product-sizes">
+                                <span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Hoodie Oversize Classic</h4>
+                            <div class="product-price"><span class="current">$89.00</span></div>
+                            <p class="product-colors">1 couleur</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-sneakers.png" alt="Sneakers Wave">
+                            <div class="product-actions"><button><i class="far fa-heart"></i></button><button><i
+                                        class="far fa-eye"></i></button></div>
+                            <div class="product-sizes"><span>40</span><span>41</span><span>42</span><span>43</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sneakers Wave Runner</h4>
+                            <div class="product-price"><span class="current"
+                                    style="color:var(--color-accent);">$84.00</span><span
+                                    class="original">$120.00</span></div>
+                            <p class="product-colors">3 couleurs</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-tracksuit.png" alt="Survêtement Scarface">
+                            <div class="product-actions"><button><i class="far fa-heart"></i></button><button><i
+                                        class="far fa-eye"></i></button></div>
+                            <div class="product-sizes">
+                                <span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Survêtement Scarface 2.0</h4>
+                            <div class="product-price"><span class="current">$194.00</span></div>
+                            <p class="product-colors">1 couleur</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-text">PRIMEO</span>
+                    <p>Votre marque streetwear premium. Qualité exceptionnelle, style unique.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-tiktok"></i></a><a
+                            href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+                                class="fab fa-snapchat-ghost"></i></a><a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Boutique</h5>
+                    <ul>
+                        <li><a href="collections.html">Nouveautés</a></li>
+                        <li><a href="collections.html">Homme</a></li>
+                        <li><a href="collections.html">Femme</a></li>
+                        <li><a href="collections.html">Accessoires</a></li>
+                        <li><a href="collections.html">Soldes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Informations</h5>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Newsletter</h5>
+                    <p style="font-size:1.3rem;color:rgba(255,255,255,0.5);margin-bottom:1.6rem;">Recevez 10% de
+                        réduction.</p>
+                    <div class="footer-newsletter"><input type="email" placeholder="Votre email"><button>S'inscrire
+                            →</button></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2024 PRIMEO. Tous droits réservés.</span>
+                <div class="payment-icons"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i
+                        class="fab fa-cc-paypal"></i><i class="fab fa-cc-apple-pay"></i><i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery (product-specific)
+        function changeImage(thumb) {
+            document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+            document.getElementById('mainImage').src = thumb.querySelector('img').src;
+        }
+        // Quantity (product-specific)
+        function updateQty(delta) {
+            const inp = document.getElementById('qtyInput');
+            let val = parseInt(inp.value) + delta;
+            if (val < 1) val = 1; if (val > 10) val = 10;
+            inp.value = val;
+        }
+        // Tabs (product-specific)
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

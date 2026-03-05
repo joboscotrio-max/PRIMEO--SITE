@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Favoris | PRIMEO</title>
+    <meta name="description" content="Vos produits favoris PRIMEO — Retrouvez tous vos coups de cœur.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        <div class="marquee">
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo"><span class="logo-text">PRIMEO</span></a>
+            <nav class="header-nav">
+                <a href="index.html">Accueil</a>
+                <a href="nouveautes.html">Nouveautés</a>
+                <a href="homme.html">Homme</a>
+                <a href="femme.html">Femme</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="soldes.html" class="sale">Soldes</a>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="searchToggle"><i class="fas fa-search"></i></a>
+                <a href="compte.html"><i class="far fa-user"></i></a>
+                <a href="favoris.html"><i class="fas fa-heart" style="color:var(--color-accent);"></i><span
+                        class="badge wishlist-count">0</span></a>
+                <a href="panier.html"><i class="fas fa-shopping-bag"></i><span class="badge cart-count">0</span></a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+            <nav class="mobile-menu-nav">
+                <a href="index.html">Accueil</a>
+                <a href="nouveautes.html">Nouveautés</a>
+                <a href="homme.html">Homme</a>
+                <a href="femme.html">Femme</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="soldes.html" class="sale">Soldes</a>
+            </nav>
+        </div>
+    </div>
+
+    <section class="section wishlist-section">
+        <div class="container">
+            <nav class="breadcrumb" style="margin-bottom:2rem;">
+                <a href="index.html" style="color:var(--color-text-muted);">Accueil</a>
+                <span style="color:var(--color-text-light);">/</span>
+                <span>Mes Favoris</span>
+            </nav>
+            <h1 class="section-title" style="margin-bottom:3rem;">Mes Favoris <span id="wishlistCountTitle"
+                    style="font-size:1.8rem;color:var(--color-text-muted);font-weight:400;"></span></h1>
+
+            <div class="wishlist-empty" id="wishlistEmpty" style="display:none;">
+                <div class="cart-empty-icon"><i class="far fa-heart"></i></div>
+                <h2>Aucun favori pour le moment</h2>
+                <p>Parcourez notre boutique et ajoutez vos produits préférés en cliquant sur le cœur.</p>
+                <a href="collections.html" class="btn btn-dark">Découvrir nos produits</a>
+            </div>
+
+            <div class="products-grid" id="wishlistGrid" style="display:none;"></div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><span class="logo-text">PRIMEO</span>
+                    <p>Votre marque streetwear premium.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Boutique</h5>
+                    <ul>
+                        <li><a href="nouveautes.html">Nouveautés</a></li>
+                        <li><a href="homme.html">Homme</a></li>
+                        <li><a href="femme.html">Femme</a></li>
+                        <li><a href="accessoires.html">Accessoires</a></li>
+                        <li><a href="soldes.html">Soldes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Informations</h5>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Newsletter</h5>
+                    <p style="font-size:1.3rem;color:rgba(255,255,255,0.5);margin-bottom:1.6rem;">Recevez 10% de
+                        réduction.</p>
+                    <div class="footer-newsletter"><input type="email" placeholder="Votre email"><button>S'inscrire
+                            →</button></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2024 PRIMEO. Tous droits réservés.</span>
+                <div class="payment-icons"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i
+                        class="fab fa-cc-paypal"></i><i class="fab fa-cc-apple-pay"></i><i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+    <script>
+        function renderWishlist() {
+            const items = Wishlist.getItems();
+            const emptyEl = document.getElementById('wishlistEmpty');
+            const gridEl = document.getElementById('wishlistGrid');
+            const countTitle = document.getElementById('wishlistCountTitle');
+            countTitle.textContent = items.length > 0 ? '(' + items.length + ')' : '';
+            if (items.length === 0) {
+                emptyEl.style.display = 'block';
+                gridEl.style.display = 'none';
+                return;
+            }
+            emptyEl.style.display = 'none';
+            gridEl.style.display = 'grid';
+            gridEl.innerHTML = items.map(function (item) {
+                var safeName = item.name.replace(/'/g, "\\'");
+                return '<div class="product-card">' +
+                    '<a href="' + (item.link || 'product.html') + '">' +
+                    '<div class="product-image">' +
+                    '<img src="' + item.image + '" alt="' + item.name + '">' +
+                    '<div class="product-actions" style="opacity:1;transform:none;">' +
+                    '<button class="wishlist-remove-btn" title="Retirer des favoris" onclick="event.preventDefault();event.stopPropagation();removeFromWishlist(\'' + safeName + '\')"><i class="fas fa-times"></i></button>' +
+                    '</div></div>' +
+                    '<div class="product-info"><h4>' + item.name + '</h4>' +
+                    '<div class="product-price"><span class="current">' + item.price.toFixed(2) + ' $ CAD</span></div>' +
+                    '</div></a>' +
+                    '<button class="btn btn-dark btn-full" style="margin-top:1rem;padding:1.2rem;" onclick="event.preventDefault();addWishlistToCart(\'' + safeName + '\')">' +
+                    '<i class="fas fa-shopping-bag"></i> Ajouter au panier</button></div>';
+            }).join('');
+        }
+        function removeFromWishlist(name) { Wishlist.removeItem(name); renderWishlist(); }
+        function addWishlistToCart(name) {
+            var items = Wishlist.getItems();
+            var item = items.find(function (i) { return i.name === name; });
+            if (item) { Cart.addItem({ name: item.name, price: item.price, image: item.image, size: 'M', qty: 1 }); }
+        }
+        document.addEventListener('DOMContentLoaded', renderWishlist);
+    </script>
+</body>
+
+</html>

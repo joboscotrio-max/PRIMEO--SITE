@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement | PRIMEO</title>
+    <meta name="description" content="Finalisez votre commande PRIMEO — Paiement sécurisé.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        <div class="marquee">
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo"><span class="logo-text">PRIMEO</span></a>
+            <nav class="header-nav">
+                <a href="index.html">Accueil</a>
+                <a href="nouveautes.html">Nouveautés</a>
+                <a href="homme.html">Homme</a>
+                <a href="femme.html">Femme</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="soldes.html" class="sale">Soldes</a>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="searchToggle"><i class="fas fa-search"></i></a>
+                <a href="compte.html"><i class="far fa-user"></i></a>
+                <a href="favoris.html"><i class="far fa-heart"></i><span class="badge wishlist-count">0</span></a>
+                <a href="panier.html"><i class="fas fa-shopping-bag"></i><span class="badge cart-count">0</span></a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+            <nav class="mobile-menu-nav">
+                <a href="index.html">Accueil</a>
+                <a href="nouveautes.html">Nouveautés</a>
+                <a href="homme.html">Homme</a>
+                <a href="femme.html">Femme</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="soldes.html" class="sale">Soldes</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CHECKOUT -->
+    <section class="section checkout-section">
+        <div class="container">
+            <nav class="breadcrumb" style="margin-bottom:2rem;">
+                <a href="index.html" style="color:var(--color-text-muted);">Accueil</a>
+                <span style="color:var(--color-text-light);">/</span>
+                <a href="panier.html" style="color:var(--color-text-muted);">Panier</a>
+                <span style="color:var(--color-text-light);">/</span>
+                <span>Paiement</span>
+            </nav>
+
+            <!-- Empty cart redirect -->
+            <div id="checkoutEmpty" style="display:none;">
+                <div class="cart-empty" style="padding:6rem 2rem;">
+                    <div class="cart-empty-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h2>Votre panier est vide</h2>
+                    <p>Ajoutez des articles à votre panier avant de passer au paiement.</p>
+                    <a href="collections.html" class="btn btn-dark">Découvrir nos produits</a>
+                </div>
+            </div>
+
+            <!-- Checkout Content -->
+            <div id="checkoutContent" style="display:none;">
+                <h1 class="section-title" style="margin-bottom:3rem;">Finaliser la commande</h1>
+
+                <!-- Progress steps -->
+                <div class="checkout-steps">
+                    <div class="checkout-step active" data-step="1"><span>1</span> Livraison</div>
+                    <div class="checkout-step" data-step="2"><span>2</span> Paiement</div>
+                    <div class="checkout-step" data-step="3"><span>3</span> Confirmation</div>
+                </div>
+
+                <div class="checkout-grid">
+                    <!-- Left: Forms -->
+                    <div class="checkout-forms">
+                        <!-- Step 1: Shipping -->
+                        <div class="checkout-form-step active" id="step1">
+                            <h2><i class="fas fa-truck"></i> Informations de livraison</h2>
+                            <form id="shippingForm" onsubmit="return goToStep2(event)">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Prénom *</label>
+                                        <input type="text" id="shipFirstName" required placeholder="Prénom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nom *</label>
+                                        <input type="text" id="shipLastName" required placeholder="Nom">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email *</label>
+                                    <input type="email" id="shipEmail" required placeholder="votre@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Téléphone *</label>
+                                    <input type="tel" id="shipPhone" required placeholder="(514) 000-0000">
+                                </div>
+                                <div class="form-group">
+                                    <label>Adresse *</label>
+                                    <input type="text" id="shipAddress" required placeholder="123 Rue Exemple">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Ville *</label>
+                                        <input type="text" id="shipCity" required placeholder="Montréal">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Province *</label>
+                                        <select id="shipProvince" required>
+                                            <option value="">Sélectionnez</option>
+                                            <option value="QC">Québec</option>
+                                            <option value="ON">Ontario</option>
+                                            <option value="BC">Colombie-Britannique</option>
+                                            <option value="AB">Alberta</option>
+                                            <option value="MB">Manitoba</option>
+                                            <option value="SK">Saskatchewan</option>
+                                            <option value="NS">Nouvelle-Écosse</option>
+                                            <option value="NB">Nouveau-Brunswick</option>
+                                            <option value="NL">Terre-Neuve-et-Labrador</option>
+                                            <option value="PE">Île-du-Prince-Édouard</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Code postal *</label>
+                                    <input type="text" id="shipPostal" required placeholder="H2X 1Y4">
+                                </div>
+                                <button type="submit" class="btn btn-dark btn-full" style="margin-top:1rem;">Continuer
+                                    vers le paiement <i class="fas fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+
+                        <!-- Step 2: Payment -->
+                        <div class="checkout-form-step" id="step2">
+                            <h2><i class="fas fa-credit-card"></i> Méthode de paiement</h2>
+
+                            <div class="payment-methods">
+                                <label class="payment-method active" data-method="card">
+                                    <input type="radio" name="paymentMethod" value="card" checked>
+                                    <div class="payment-method-inner">
+                                        <div class="payment-method-icons">
+                                            <i class="fab fa-cc-visa"></i>
+                                            <i class="fab fa-cc-mastercard"></i>
+                                        </div>
+                                        <span>Carte de crédit / débit</span>
+                                    </div>
+                                </label>
+                                <label class="payment-method" data-method="paypal">
+                                    <input type="radio" name="paymentMethod" value="paypal">
+                                    <div class="payment-method-inner">
+                                        <div class="payment-method-icons">
+                                            <i class="fab fa-cc-paypal"></i>
+                                        </div>
+                                        <span>PayPal</span>
+                                    </div>
+                                </label>
+                                <label class="payment-method" data-method="applepay">
+                                    <input type="radio" name="paymentMethod" value="applepay">
+                                    <div class="payment-method-inner">
+                                        <div class="payment-method-icons">
+                                            <i class="fab fa-cc-apple-pay"></i>
+                                        </div>
+                                        <span>Apple Pay</span>
+                                    </div>
+                                </label>
+                                <label class="payment-method" data-method="stripe">
+                                    <input type="radio" name="paymentMethod" value="stripe">
+                                    <div class="payment-method-inner">
+                                        <div class="payment-method-icons">
+                                            <i class="fab fa-cc-stripe"></i>
+                                        </div>
+                                        <span>Stripe</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Card form -->
+                            <div class="payment-card-form" id="cardForm">
+                                <div class="form-group">
+                                    <label>Numéro de carte *</label>
+                                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nom sur la carte *</label>
+                                    <input type="text" id="cardName" placeholder="NOM PRÉNOM" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Date d'expiration *</label>
+                                        <input type="text" id="cardExpiry" placeholder="MM/AA" maxlength="5" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>CVV *</label>
+                                        <input type="text" id="cardCvv" placeholder="123" maxlength="4" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PayPal / Apple Pay / Stripe info -->
+                            <div class="payment-alt-info" id="altPayInfo" style="display:none;">
+                                <div class="payment-alt-msg">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <p>Vous serez redirigé vers <span id="altPayName">PayPal</span> pour finaliser votre
+                                        paiement en toute sécurité.</p>
+                                </div>
+                            </div>
+
+                            <div style="display:flex;gap:1rem;margin-top:2rem;">
+                                <button class="btn btn-outline-dark" onclick="backToStep1()" style="flex:0 0 auto;"><i
+                                        class="fas fa-arrow-left"></i> Retour</button>
+                                <button class="btn btn-dark btn-full" onclick="processPayment()"><i
+                                        class="fas fa-lock"></i> Payer <span id="payTotal"></span></button>
+                            </div>
+
+                            <div class="checkout-secure">
+                                <i class="fas fa-shield-alt"></i> Paiement 100% sécurisé — Vos données sont chiffrées
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Confirmation -->
+                        <div class="checkout-form-step" id="step3">
+                            <div class="checkout-success">
+                                <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                                <h2>Commande confirmée !</h2>
+                                <p>Merci pour votre achat. Un email de confirmation a été envoyé à <strong
+                                        id="confirmEmail"></strong>.</p>
+                                <div class="order-number">Commande #PRIMEO-<span id="orderNumber"></span></div>
+                                <div class="order-details-summary" id="orderDetails"></div>
+                                <a href="index.html" class="btn btn-dark" style="margin-top:2rem;">Retour à la
+                                    boutique</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Order Summary -->
+                    <div class="checkout-summary-col" id="checkoutSummaryCol">
+                        <div class="cart-summary">
+                            <h3>Résumé de la commande</h3>
+                            <div id="checkoutItems"></div>
+                            <div class="cart-summary-divider"></div>
+                            <div class="cart-summary-row">
+                                <span>Sous-total</span>
+                                <span id="ckSubtotal">0.00 $ CAD</span>
+                            </div>
+                            <div class="cart-summary-row">
+                                <span>Livraison</span>
+                                <span id="ckShipping">Calculée</span>
+                            </div>
+                            <div class="cart-summary-row">
+                                <span>TPS (5%)</span>
+                                <span id="ckTPS">0.00 $</span>
+                            </div>
+                            <div class="cart-summary-row">
+                                <span>TVQ (9.975%)</span>
+                                <span id="ckTVQ">0.00 $</span>
+                            </div>
+                            <div class="cart-summary-divider"></div>
+                            <div class="cart-summary-row cart-summary-total">
+                                <span>Total</span>
+                                <span id="ckTotal">0.00 $ CAD</span>
+                            </div>
+                            <div class="cart-guarantees">
+                                <div class="guarantee-item"><i class="fas fa-shield-alt"></i> Paiement 100% sécurisé
+                                </div>
+                                <div class="guarantee-item"><i class="fas fa-undo"></i> Retours gratuits 30 jours</div>
+                                <div class="guarantee-item"><i class="fas fa-truck"></i> Livraison gratuite dès 99$
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><span class="logo-text">PRIMEO</span>
+                    <p>Votre marque streetwear premium.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Boutique</h5>
+                    <ul>
+                        <li><a href="nouveautes.html">Nouveautés</a></li>
+                        <li><a href="homme.html">Homme</a></li>
+                        <li><a href="femme.html">Femme</a></li>
+                        <li><a href="accessoires.html">Accessoires</a></li>
+                        <li><a href="soldes.html">Soldes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Informations</h5>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Newsletter</h5>
+                    <p style="font-size:1.3rem;color:rgba(255,255,255,0.5);margin-bottom:1.6rem;">Recevez 10% de
+                        réduction.</p>
+                    <div class="footer-newsletter"><input type="email" placeholder="Votre email"><button>S'inscrire
+                            →</button></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2024 PRIMEO. Tous droits réservés.</span>
+                <div class="payment-icons"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i
+                        class="fab fa-cc-paypal"></i><i class="fab fa-cc-apple-pay"></i><i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+    <script>
+        function renderCheckout() {
+            var items = Cart.getItems();
+            if (items.length === 0) {
+                document.getElementById('checkoutEmpty').style.display = 'block';
+                document.getElementById('checkoutContent').style.display = 'none';
+                return;
+            }
+            document.getElementById('checkoutEmpty').style.display = 'none';
+            document.getElementById('checkoutContent').style.display = 'block';
+
+            var checkoutItems = document.getElementById('checkoutItems');
+            checkoutItems.innerHTML = items.map(function (item) {
+                return '<div class="checkout-item">' +
+                    '<div class="checkout-item-img"><img src="' + item.image + '" alt="' + item.name + '"></div>' +
+                    '<div class="checkout-item-info">' +
+                    '<h4>' + item.name + '</h4>' +
+                    '<p>Taille: ' + (item.size || 'M') + ' — Qté: ' + item.qty + '</p>' +
+                    '</div>' +
+                    '<div class="checkout-item-price">' + (item.price * item.qty).toFixed(2) + ' $</div>' +
+                    '</div>';
+            }).join('');
+
+            updateCheckoutTotals();
+
+            // Pre-fill if logged in
+            var user = Account.getUser();
+            if (user) {
+                document.getElementById('shipFirstName').value = user.firstName || '';
+                document.getElementById('shipLastName').value = user.lastName || '';
+                document.getElementById('shipEmail').value = user.email || '';
+            }
+        }
+
+        function updateCheckoutTotals() {
+            var subtotal = Cart.getTotal();
+            var shipping = subtotal >= 99 ? 0 : 9.95;
+            var tps = subtotal * 0.05;
+            var tvq = subtotal * 0.09975;
+            var total = subtotal + shipping + tps + tvq;
+
+            document.getElementById('ckSubtotal').textContent = subtotal.toFixed(2) + ' $ CAD';
+            var shipEl = document.getElementById('ckShipping');
+            if (shipping === 0) {
+                shipEl.textContent = 'GRATUITE';
+                shipEl.style.color = '#27ae60';
+                shipEl.style.fontWeight = '700';
+            } else {
+                shipEl.textContent = shipping.toFixed(2) + ' $';
+                shipEl.style.color = '';
+                shipEl.style.fontWeight = '';
+            }
+            document.getElementById('ckTPS').textContent = tps.toFixed(2) + ' $';
+            document.getElementById('ckTVQ').textContent = tvq.toFixed(2) + ' $';
+            document.getElementById('ckTotal').textContent = total.toFixed(2) + ' $ CAD';
+            var payTotal = document.getElementById('payTotal');
+            if (payTotal) payTotal.textContent = total.toFixed(2) + ' $ CAD';
+        }
+
+        function goToStep2(e) {
+            e.preventDefault();
+            document.getElementById('step1').classList.remove('active');
+            document.getElementById('step2').classList.add('active');
+            document.querySelectorAll('.checkout-step')[0].classList.remove('active');
+            document.querySelectorAll('.checkout-step')[0].classList.add('done');
+            document.querySelectorAll('.checkout-step')[1].classList.add('active');
+            updateCheckoutTotals();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return false;
+        }
+
+        function backToStep1() {
+            document.getElementById('step2').classList.remove('active');
+            document.getElementById('step1').classList.add('active');
+            document.querySelectorAll('.checkout-step')[1].classList.remove('active');
+            document.querySelectorAll('.checkout-step')[0].classList.remove('done');
+            document.querySelectorAll('.checkout-step')[0].classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function processPayment() {
+            var method = document.querySelector('input[name="paymentMethod"]:checked').value;
+
+            if (method === 'card') {
+                var cardNum = document.getElementById('cardNumber').value;
+                var cardName = document.getElementById('cardName').value;
+                var cardExpiry = document.getElementById('cardExpiry').value;
+                var cardCvv = document.getElementById('cardCvv').value;
+                if (!cardNum || !cardName || !cardExpiry || !cardCvv) {
+                    alert('Veuillez remplir tous les champs de la carte.');
+                    return;
+                }
+            }
+
+            // Show loading
+            var payBtn = document.querySelector('#step2 .btn-dark');
+            var origHTML = payBtn.innerHTML;
+            payBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Traitement en cours...';
+            payBtn.disabled = true;
+
+            setTimeout(function () {
+                // Show confirmation
+                document.getElementById('step2').classList.remove('active');
+                document.getElementById('step3').classList.add('active');
+                document.querySelectorAll('.checkout-step')[1].classList.remove('active');
+                document.querySelectorAll('.checkout-step')[1].classList.add('done');
+                document.querySelectorAll('.checkout-step')[2].classList.add('active');
+
+                var email = document.getElementById('shipEmail').value;
+                document.getElementById('confirmEmail').textContent = email;
+                document.getElementById('orderNumber').textContent = Date.now().toString().slice(-8);
+
+                var items = Cart.getItems();
+                var subtotal = Cart.getTotal();
+                var tps = subtotal * 0.05;
+                var tvq = subtotal * 0.09975;
+                var shipping = subtotal >= 99 ? 0 : 9.95;
+                var total = subtotal + shipping + tps + tvq;
+
+                document.getElementById('orderDetails').innerHTML =
+                    '<p><strong>Articles:</strong> ' + items.map(function (i) { return i.name + ' (x' + i.qty + ')'; }).join(', ') + '</p>' +
+                    '<p><strong>Total payé:</strong> ' + total.toFixed(2) + ' $ CAD</p>' +
+                    '<p><strong>Méthode:</strong> ' + method.charAt(0).toUpperCase() + method.slice(1) + '</p>';
+
+                // Hide summary on confirmation
+                document.getElementById('checkoutSummaryCol').style.display = 'none';
+
+                // Clear cart
+                Cart.clear();
+
+                payBtn.innerHTML = origHTML;
+                payBtn.disabled = false;
+
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 2000);
+        }
+
+        // Payment method switching
+        document.addEventListener('DOMContentLoaded', function () {
+            renderCheckout();
+
+            document.querySelectorAll('.payment-method').forEach(function (label) {
+                label.addEventListener('click', function () {
+                    document.querySelectorAll('.payment-method').forEach(function (l) { l.classList.remove('active'); });
+                    label.classList.add('active');
+                    var method = label.dataset.method;
+                    if (method === 'card') {
+                        document.getElementById('cardForm').style.display = 'block';
+                        document.getElementById('altPayInfo').style.display = 'none';
+                    } else {
+                        document.getElementById('cardForm').style.display = 'none';
+                        document.getElementById('altPayInfo').style.display = 'block';
+                        var names = { paypal: 'PayPal', applepay: 'Apple Pay', stripe: 'Stripe' };
+                        document.getElementById('altPayName').textContent = names[method] || method;
+                    }
+                });
+            });
+
+            // Card number formatting
+            var cardInput = document.getElementById('cardNumber');
+            if (cardInput) {
+                cardInput.addEventListener('input', function (e) {
+                    var v = e.target.value.replace(/\D/g, '').substring(0, 16);
+                    e.target.value = v.replace(/(.{4})/g, '$1 ').trim();
+                });
+            }
+
+            // Expiry formatting
+            var expiryInput = document.getElementById('cardExpiry');
+            if (expiryInput) {
+                expiryInput.addEventListener('input', function (e) {
+                    var v = e.target.value.replace(/\D/g, '').substring(0, 4);
+                    if (v.length >= 2) v = v.substring(0, 2) + '/' + v.substring(2);
+                    e.target.value = v;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+{
+    "title": "PRIMEO - Femme",
+    "type": "page",
+    "version": "0.4",
+    "page_settings": {
+        "template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "padding": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "0",
+                    "bottom": "10",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#000"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='overflow:hidden;white-space:nowrap;'><div style='display:inline-flex;gap:6rem;animation:marquee 25s linear infinite;color:#fff;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;'><span>✓ LIVRAISON GRATUITE DÈS 99$</span><span>✓ PAIEMENT EN 3-4 FOIS SANS FRAIS</span><span>✓ RETOURS GRATUITS</span><span>✓ QUALITÉ PREMIUM</span><span>✓ LIVRAISON GRATUITE DÈS 99$</span><span>✓ PAIEMENT EN 3-4 FOIS SANS FRAIS</span></div></div><style>@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "min_height": {
+                    "unit": "px",
+                    "size": 320
+                },
+                "background_background": "classic",
+                "background_image": {
+                    "url": "https://votre-site.com/wp-content/uploads/hero.png"
+                },
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_color": "rgba(0,0,0,0.55)",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                }
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100,
+                        "align": "center"
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Collection Femme",
+                                "header_size": "h1",
+                                "align": "center",
+                                "title_color": "#FFF",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Albert Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 42
+                                },
+                                "typography_font_weight": "800"
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style='text-align:center;color:rgba(255,255,255,0.8);font-size:15px;'>Élégance sportive et confort premium — 38 produits</p>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "60",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                }
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:30px;padding:16px 0;border-bottom:1px solid #ebebeb;'><div style='display:flex;gap:8px;flex-wrap:wrap;'><button style='padding:8px 20px;font-size:12px;font-weight:600;border:1px solid #000;background:#000;color:#fff;border-radius:50px;cursor:pointer;text-transform:uppercase;'>Tout</button><button style='padding:8px 20px;font-size:12px;font-weight:600;border:1px solid #ebebeb;background:#fff;color:#000;border-radius:50px;cursor:pointer;text-transform:uppercase;'>Ensembles</button><button style='padding:8px 20px;font-size:12px;font-weight:600;border:1px solid #ebebeb;background:#fff;color:#000;border-radius:50px;cursor:pointer;text-transform:uppercase;'>Hoodies</button><button style='padding:8px 20px;font-size:12px;font-weight:600;border:1px solid #ebebeb;background:#fff;color:#000;border-radius:50px;cursor:pointer;text-transform:uppercase;'>Leggings</button><button style='padding:8px 20px;font-size:12px;font-weight:600;border:1px solid #ebebeb;background:#fff;color:#000;border-radius:50px;cursor:pointer;text-transform:uppercase;'>Sneakers</button></div><select style='padding:10px 16px;font-size:12px;border:1px solid #ebebeb;border-radius:4px;'><option>Trier par: En vedette</option><option>Prix: croissant</option><option>Prix: décroissant</option></select></div><div style='display:grid;grid-template-columns:repeat(4,1fr);gap:20px;'><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#000;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>Nouveau</span><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Ensemble Sport Élégance</h4><span style='font-size:14px;font-weight:500;'>$145.00</span><p style='font-size:11.5px;color:#DB1215;margin:3px 0 0;'>2 couleurs</p></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-hoodie.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Hoodie Crop Signature</h4><span style='font-size:14px;font-weight:500;'>$79.00</span><p style='font-size:11.5px;color:#DB1215;margin:3px 0 0;'>3 couleurs</p></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#DB1215;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>-25%</span><img src='https://votre-site.com/wp-content/uploads/product-jersey.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Legging High-Waist Pro</h4><div style='display:flex;gap:8px;'><span style='color:#DB1215;font-weight:500;'>$52.00</span><span style='color:#868686;text-decoration:line-through;'>$69.00</span></div></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-sneakers.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Sneakers Cloud Femme</h4><span style='font-size:14px;font-weight:500;'>$118.00</span></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Ensemble Urban Queen</h4><span style='font-size:14px;font-weight:500;'>$169.00</span></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#000;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>Best-seller</span><img src='https://votre-site.com/wp-content/uploads/product-hoodie.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Hoodie Oversized Femme</h4><span style='font-size:14px;font-weight:500;'>$95.00</span></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-jersey.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Legging Seamless</h4><span style='font-size:14px;font-weight:500;'>$59.00</span></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#000;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>Nouveau</span><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Ensemble Fitness Pro</h4><span style='font-size:14px;font-weight:500;'>$139.00</span></div></div></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "60",
+                    "right": "0",
+                    "bottom": "30",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#000"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='text-align:center;padding:24px 0;font-size:12px;color:rgba(255,255,255,0.35);'><span style='font-size:24px;font-weight:900;letter-spacing:3px;color:#fff;display:block;margin-bottom:20px;'>PRIMEO</span><span>© 2024 PRIMEO. Tous droits réservés.</span></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

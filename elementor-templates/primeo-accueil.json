@@ -1,0 +1,779 @@
+{
+    "title": "PRIMEO - Page Accueil",
+    "type": "page",
+    "version": "0.4",
+    "page_settings": {
+        "template": "elementor_canvas",
+        "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+        }
+    },
+    "content": [
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "padding": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "0",
+                    "bottom": "10",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#000000"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style=\"overflow:hidden;white-space:nowrap;\"><div style=\"display:inline-flex;gap:6rem;animation:marquee 25s linear infinite;color:#fff;font-family:'Albert Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;\"><span>✓ LIVRAISON GRATUITE DÈS 99$</span><span>✓ PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span><span>✓ RETOURS GRATUITS SOUS 30 JOURS</span><span>✓ QUALITÉ PREMIUM GARANTIE</span><span>✓ LIVRAISON GRATUITE DÈS 99$</span><span>✓ PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span></div></div><style>@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "content_position": "bottom",
+                "height": "min-height",
+                "custom_height": {
+                    "unit": "vh",
+                    "size": 92
+                },
+                "background_background": "classic",
+                "background_image": {
+                    "url": "https://votre-site.com/wp-content/uploads/hero.png"
+                },
+                "background_position": "center center",
+                "background_size": "cover",
+                "background_overlay_background": "gradient",
+                "background_overlay_color": "rgba(0,0,0,0.1)",
+                "background_overlay_color_b": "rgba(0,0,0,0.7)",
+                "background_overlay_gradient_angle": {
+                    "unit": "deg",
+                    "size": 180
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                }
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100,
+                        "align": "center"
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "WWW.PRIMEO.COM",
+                                "align": "center",
+                                "title_color": "rgba(255,255,255,0.5)",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Albert Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13
+                                },
+                                "typography_font_weight": "500",
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 3
+                                },
+                                "typography_text_transform": "uppercase"
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "La street comme héritage.",
+                                "header_size": "h1",
+                                "align": "center",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Playfair Display",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 70
+                                },
+                                "typography_font_weight": "700",
+                                "typography_font_style": "italic",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.1
+                                }
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style='text-align:center;color:rgba(255,255,255,0.85);font-size:16px;font-weight:300;'>Découvrez la nouvelle collection PRIMEO — Streetwear premium pour les athlètes urbains.</p>",
+                                "align": "center"
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:flex;gap:1.2rem;justify-content:center;margin-top:10px;'><a href='/collections' style='padding:15px 40px;font-family:Albert Sans,sans-serif;font-size:13.5px;font-weight:600;text-transform:uppercase;background:#fff;color:#000;border-radius:4px;text-decoration:none;'>Shop Now</a><a href='#products' style='padding:15px 40px;font-family:Albert Sans,sans-serif;font-size:13.5px;font-weight:600;text-transform:uppercase;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);border-radius:4px;text-decoration:none;'>Découvrir</a></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "0",
+                    "bottom": "24",
+                    "left": "0"
+                },
+                "border_border": "solid",
+                "border_width": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "1",
+                    "left": "0"
+                },
+                "border_color": "#ebebeb"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-truck",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Livraison Express",
+                                "position": "left",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13
+                                },
+                                "title_typography_font_weight": "500",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 20
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-shield-alt",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Paiement Sécurisé",
+                                "position": "left",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13
+                                },
+                                "title_typography_font_weight": "500",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 20
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-undo",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Retours Gratuits",
+                                "position": "left",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13
+                                },
+                                "title_typography_font_weight": "500",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 20
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-star",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Qualité Premium",
+                                "position": "left",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13
+                                },
+                                "title_typography_font_weight": "500",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 20
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#f5f5f5"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;'><h2 style='font-family:Albert Sans,sans-serif;font-size:32px;font-weight:700;color:#000;margin:0;'>Découvrez nos catégories</h2><a href='/collections' style='font-family:Albert Sans,sans-serif;font-size:13px;font-weight:600;color:#000;border-bottom:2px solid #000;padding-bottom:3px;text-decoration:none;'>Voir tout →</a></div><div style='display:grid;grid-template-columns:repeat(4,1fr);gap:20px;'><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;height:100%;object-fit:cover;'><div style='position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,0.6) 100%);display:flex;align-items:flex-end;padding:24px;'><div><h3 style='font-size:20px;font-weight:700;color:#fff;margin:0;'>Survêtements</h3><p style='font-size:12px;color:rgba(255,255,255,0.7);margin:4px 0 0;'>24 produits</p></div></div></div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-jersey.png' style='width:100%;height:100%;object-fit:cover;'><div style='position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,0.6) 100%);display:flex;align-items:flex-end;padding:24px;'><div><h3 style='font-size:20px;font-weight:700;color:#fff;margin:0;'>Maillots</h3><p style='font-size:12px;color:rgba(255,255,255,0.7);margin:4px 0 0;'>18 produits</p></div></div></div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-hoodie.png' style='width:100%;height:100%;object-fit:cover;'><div style='position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,0.6) 100%);display:flex;align-items:flex-end;padding:24px;'><div><h3 style='font-size:20px;font-weight:700;color:#fff;margin:0;'>Hoodies</h3><p style='font-size:12px;color:rgba(255,255,255,0.7);margin:4px 0 0;'>32 produits</p></div></div></div><div style='background:#fff;border:1px solid #ebebeb;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center;aspect-ratio:3/4;'><h3 style='font-size:22px;font-weight:700;margin-bottom:20px;'>Découvrez le reste de nos collections</h3><a href='/collections' style='padding:12px 28px;font-size:12px;font-weight:600;text-transform:uppercase;background:#000;color:#fff;border-radius:50px;text-decoration:none;'>Voir tout</a></div></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                }
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;'><h2 style='font-family:Albert Sans,sans-serif;font-size:32px;font-weight:700;color:#000;margin:0;'>Nos Dernières Nouveautés</h2><a href='/collections' style='font-family:Albert Sans,sans-serif;font-size:13px;font-weight:600;color:#000;border-bottom:2px solid #000;padding-bottom:3px;text-decoration:none;'>Voir tout →</a></div><div style='display:grid;grid-template-columns:repeat(4,1fr);gap:20px;'><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#000;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>Nouveau</span><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Survêtement Green Eagles</h4><span style='font-size:14px;font-weight:500;'>$161.00</span><p style='font-size:11.5px;color:#DB1215;margin:3px 0 0;'>1 couleur disponible</p></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-jersey.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Maillot Black Gold Edition</h4><span style='font-size:14px;font-weight:500;'>$96.00</span><p style='font-size:11.5px;color:#DB1215;margin:3px 0 0;'>2 couleurs</p></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#DB1215;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>-30%</span><img src='https://votre-site.com/wp-content/uploads/product-sneakers.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Sneakers Wave Runner</h4><div style='display:flex;gap:8px;'><span style='font-size:14px;font-weight:500;color:#DB1215;'>$84.00</span><span style='font-size:13px;color:#868686;text-decoration:line-through;'>$120.00</span></div></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#000;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>Nouveau</span><img src='https://votre-site.com/wp-content/uploads/product-hoodie.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Hoodie Oversize Classic</h4><span style='font-size:14px;font-weight:500;'>$89.00</span><p style='font-size:11.5px;color:#DB1215;margin:3px 0 0;'>1 couleur</p></div></div></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0"
+                },
+                "gap": "no"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "image",
+                            "settings": {
+                                "image": {
+                                    "url": "https://votre-site.com/wp-content/uploads/hero.png"
+                                },
+                                "image_size": "full",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 100
+                                },
+                                "height": {
+                                    "unit": "px",
+                                    "size": 550
+                                },
+                                "object-fit": "cover"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 50,
+                        "background_background": "classic",
+                        "background_color": "#000000",
+                        "padding": {
+                            "unit": "px",
+                            "top": "60",
+                            "right": "60",
+                            "bottom": "60",
+                            "left": "60"
+                        },
+                        "content_position": "center"
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Nouvelle Collection",
+                                "header_size": "h6",
+                                "title_color": "#DB1215",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Albert Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 12
+                                },
+                                "typography_font_weight": "600",
+                                "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 3
+                                },
+                                "typography_text_transform": "uppercase"
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "L'élégance dans le mouvement.",
+                                "header_size": "h2",
+                                "title_color": "#FFFFFF",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Playfair Display",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 44
+                                },
+                                "typography_font_weight": "700",
+                                "typography_font_style": "italic",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.15
+                                }
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style='font-size:15px;font-weight:300;color:rgba(255,255,255,0.7);line-height:1.8;'>Des pièces conçues pour la performance et le style. Chaque vêtement PRIMEO est pensé pour les athlètes qui ne font jamais de compromis.</p>"
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "button",
+                            "settings": {
+                                "text": "Découvrir la collection",
+                                "link": {
+                                    "url": "/collections"
+                                },
+                                "align": "left",
+                                "background_color": "#FFFFFF",
+                                "button_text_color": "#000000",
+                                "border_radius": {
+                                    "unit": "px",
+                                    "top": "4",
+                                    "right": "4",
+                                    "bottom": "4",
+                                    "left": "4"
+                                },
+                                "typography_typography": "custom",
+                                "typography_font_family": "Albert Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 13.5
+                                },
+                                "typography_font_weight": "600",
+                                "typography_text_transform": "uppercase"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                }
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;'><h2 style='font-family:Albert Sans,sans-serif;font-size:32px;font-weight:700;color:#000;margin:0;'>Les Plus Populaires</h2><a href='/collections' style='font-family:Albert Sans,sans-serif;font-size:13px;font-weight:600;color:#000;border-bottom:2px solid #000;padding-bottom:3px;text-decoration:none;'>Voir tout →</a></div><div style='display:grid;grid-template-columns:repeat(4,1fr);gap:20px;'><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-hoodie.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Hoodie Signature Logo</h4><span style='font-size:14px;font-weight:500;'>$105.00</span></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><span style='position:absolute;top:12px;left:12px;background:#DB1215;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;text-transform:uppercase;'>-20%</span><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Survêtement Scarface 2.0</h4><div style='display:flex;gap:8px;'><span style='font-size:14px;font-weight:500;color:#DB1215;'>$155.00</span><span style='font-size:13px;color:#868686;text-decoration:line-through;'>$194.00</span></div></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-jersey.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Maillot Pro Edition</h4><span style='font-size:14px;font-weight:500;'>$78.00</span></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f2f2f2;'><img src='https://votre-site.com/wp-content/uploads/product-sneakers.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Sneakers Urban Elite</h4><span style='font-size:14px;font-weight:500;'>$134.00</span></div></div></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "60",
+                    "right": "0",
+                    "bottom": "60",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#000000"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-shipping-fast",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Livraison Express",
+                                "description_text": "Recevez vos commandes en 24-48h.",
+                                "position": "top",
+                                "primary_color": "#FFFFFF",
+                                "title_color": "#FFFFFF",
+                                "description_color": "rgba(255,255,255,0.6)",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 15
+                                },
+                                "title_typography_font_weight": "700",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "text_align": "center"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-lock",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Paiement Sécurisé",
+                                "description_text": "Visa, Mastercard, PayPal, Klarna.",
+                                "position": "top",
+                                "primary_color": "#FFFFFF",
+                                "title_color": "#FFFFFF",
+                                "description_color": "rgba(255,255,255,0.6)",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 15
+                                },
+                                "title_typography_font_weight": "700",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "text_align": "center"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-medal",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Qualité Premium",
+                                "description_text": "Matériaux haut de gamme.",
+                                "position": "top",
+                                "primary_color": "#FFFFFF",
+                                "title_color": "#FFFFFF",
+                                "description_color": "rgba(255,255,255,0.6)",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 15
+                                },
+                                "title_typography_font_weight": "700",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "text_align": "center"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 25
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "icon-box",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-headset",
+                                    "library": "fa-solid"
+                                },
+                                "title_text": "Support 24/7",
+                                "description_text": "Notre équipe est disponible.",
+                                "position": "top",
+                                "primary_color": "#FFFFFF",
+                                "title_color": "#FFFFFF",
+                                "description_color": "rgba(255,255,255,0.6)",
+                                "title_typography_typography": "custom",
+                                "title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 15
+                                },
+                                "title_typography_font_weight": "700",
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 32
+                                },
+                                "text_align": "center"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#f5f5f5"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100,
+                        "align": "center"
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "heading",
+                            "settings": {
+                                "title": "Rejoignez la communauté.",
+                                "header_size": "h2",
+                                "align": "center",
+                                "title_color": "#000000",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Playfair Display",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 40
+                                },
+                                "typography_font_weight": "700",
+                                "typography_font_style": "italic"
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "text-editor",
+                            "settings": {
+                                "editor": "<p style='text-align:center;font-size:15px;color:#868686;max-width:500px;margin:0 auto 30px;'>Inscrivez-vous pour recevoir nos offres exclusives et les dernières nouveautés.</p>",
+                                "align": "center"
+                            }
+                        },
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<form style='display:flex;max-width:500px;margin:0 auto;'><input type='email' placeholder='Votre adresse email' style='flex:1;padding:15px 20px;font-size:13px;border:2px solid #ebebeb;border-right:none;border-radius:4px 0 0 4px;outline:none;'><button type='submit' style='padding:15px 30px;font-size:13px;font-weight:600;background:#000;color:#fff;border:2px solid #000;border-radius:0 4px 4px 0;cursor:pointer;text-transform:uppercase;'>S'inscrire</button></form>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "60",
+                    "right": "0",
+                    "bottom": "30",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#000000"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,0.1);'><div><span style='font-size:24px;font-weight:900;letter-spacing:3px;color:#fff;display:block;margin-bottom:16px;'>PRIMEO</span><p style='font-size:13px;color:rgba(255,255,255,0.5);line-height:1.8;'>Votre marque streetwear premium. Qualité exceptionnelle, style unique.</p></div><div><h5 style='font-size:15px;font-weight:700;color:#fff;margin-bottom:20px;'>Boutique</h5><ul style='list-style:none;padding:0;margin:0;'><li style='margin-bottom:10px;'><a href='/nouveautes' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>Nouveautés</a></li><li style='margin-bottom:10px;'><a href='/homme' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>Homme</a></li><li style='margin-bottom:10px;'><a href='/femme' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>Femme</a></li><li style='margin-bottom:10px;'><a href='/accessoires' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>Accessoires</a></li><li style='margin-bottom:10px;'><a href='/soldes' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>Soldes</a></li></ul></div><div><h5 style='font-size:15px;font-weight:700;color:#fff;margin-bottom:20px;'>Informations</h5><ul style='list-style:none;padding:0;margin:0;'><li style='margin-bottom:10px;'><a href='/a-propos' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>À propos</a></li><li style='margin-bottom:10px;'><a href='/contact' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>Contact</a></li><li style='margin-bottom:10px;'><a href='#' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>FAQ</a></li><li style='margin-bottom:10px;'><a href='#' style='font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;'>Mentions légales</a></li></ul></div><div><h5 style='font-size:15px;font-weight:700;color:#fff;margin-bottom:20px;'>Newsletter</h5><p style='font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:16px;'>Recevez 10% sur votre 1ère commande.</p><input type='email' placeholder='Votre email' style='width:100%;padding:12px 16px;font-size:13px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:4px;color:#fff;outline:none;margin-bottom:10px;'><button style='width:100%;padding:12px;font-size:12px;font-weight:600;background:#fff;color:#000;border:none;border-radius:4px;cursor:pointer;text-transform:uppercase;'>S'inscrire →</button></div></div><div style='display:flex;justify-content:space-between;align-items:center;padding:24px 0;font-size:12px;color:rgba(255,255,255,0.35);'><span>© 2024 PRIMEO. Tous droits réservés.</span></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

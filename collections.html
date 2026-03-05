@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | PRIMEO — Streetwear Premium</title>
+    <meta name="description"
+        content="Découvrez toutes nos collections PRIMEO — Survêtements, maillots, hoodies, sneakers et accessoires sport premium.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="marquee">
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+            <span><i class="fas fa-check-circle"></i> LIVRAISON GRATUITE DÈS 99$</span>
+            <span><i class="fas fa-check-circle"></i> PAIEMENT EN 3 OU 4 FOIS SANS FRAIS</span>
+            <span><i class="fas fa-check-circle"></i> RETOURS GRATUITS SOUS 30 JOURS</span>
+            <span><i class="fas fa-check-circle"></i> QUALITÉ PREMIUM GARANTIE</span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo"><span class="logo-text">PRIMEO</span></a>
+            <nav class="header-nav">
+                <a href="index.html">Accueil</a>
+                <a href="collections.html">Nouveautés</a>
+                <a href="collections.html">Vêtements</a>
+                <a href="collections.html">Femme</a>
+                <a href="collections.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="collections.html" class="sale">Soldes</a>
+            </nav>
+            <div class="header-icons">
+                <a href="#" id="searchToggle"><i class="fas fa-search"></i></a>
+                <a href="compte.html"><i class="far fa-user"></i></a>
+                <a href="favoris.html"><i class="far fa-heart"></i><span class="badge wishlist-count">0</span></a>
+                <a href="panier.html"><i class="fas fa-shopping-bag"></i><span class="badge cart-count">0</span></a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+            <nav class="mobile-menu-nav">
+                <a href="index.html">Accueil</a>
+                <a href="collections.html">Nouveautés</a>
+                <a href="collections.html">Vêtements</a>
+                <a href="collections.html">Femme</a>
+                <a href="collections.html">Accessoires</a>
+                <a href="collections.html">Collections</a>
+                <a href="collections.html" class="sale">Soldes</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="images/hero.png" alt="Collections PRIMEO">
+        </div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <nav class="breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Collections</span></nav>
+            <h1>Toutes nos Collections</h1>
+            <p>Explorez l'univers PRIMEO — 86 produits</p>
+        </div>
+    </section>
+
+    <!-- FILTERS + GRID -->
+    <section class="section collection-section">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-left">
+                    <button class="filter-btn active" data-filter="all">Tout</button>
+                    <button class="filter-btn" data-filter="survetement">Survêtements</button>
+                    <button class="filter-btn" data-filter="maillot">Maillots</button>
+                    <button class="filter-btn" data-filter="hoodie">Hoodies</button>
+                    <button class="filter-btn" data-filter="sneakers">Sneakers</button>
+                    <button class="filter-btn" data-filter="accessoire">Accessoires</button>
+                </div>
+                <div class="filter-right">
+                    <select class="sort-select">
+                        <option>Trier par: En vedette</option>
+                        <option>Prix: croissant</option>
+                        <option>Prix: décroissant</option>
+                        <option>Les plus récents</option>
+                        <option>Meilleures ventes</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Row 1 -->
+                <div class="product-card" data-category="survetement">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <span class="product-badge">Nouveau</span>
+                            <img src="images/product-tracksuit.png" alt="Survêtement Green Eagles">
+                            <div class="product-actions">
+                                <button title="Wishlist"><i class="far fa-heart"></i></button>
+                                <button title="Aperçu"><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes">
+                                <span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Survêtement Green Eagles</h4>
+                            <div class="product-price"><span class="current">$161.00</span></div>
+                            <p class="product-colors">1 couleur disponible</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="maillot">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-jersey.png" alt="Maillot Black Gold Edition">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Maillot Black Gold Edition</h4>
+                            <div class="product-price"><span class="current">$96.00</span></div>
+                            <p class="product-colors">2 couleurs disponibles</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="sneakers">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <span class="product-badge sale">-30%</span>
+                            <img src="images/product-sneakers.png" alt="Sneakers Wave Runner">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes">
+                                <span>40</span><span>41</span><span>42</span><span>43</span><span>44</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sneakers Wave Runner</h4>
+                            <div class="product-price">
+                                <span class="current" style="color:var(--color-accent);">$84.00</span>
+                                <span class="original">$120.00</span>
+                            </div>
+                            <p class="product-colors">3 couleurs disponibles</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="hoodie">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <span class="product-badge">Nouveau</span>
+                            <img src="images/product-hoodie.png" alt="Hoodie Oversize Classic">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes">
+                                <span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Hoodie Oversize Classic</h4>
+                            <div class="product-price"><span class="current">$89.00</span></div>
+                            <p class="product-colors">1 couleur disponible</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Row 2 -->
+                <div class="product-card" data-category="hoodie">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-hoodie.png" alt="Hoodie Signature Logo">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Hoodie Signature Logo</h4>
+                            <div class="product-price"><span class="current">$105.00</span></div>
+                            <p class="product-colors">2 couleurs disponibles</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="survetement">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <span class="product-badge sale">-20%</span>
+                            <img src="images/product-tracksuit.png" alt="Survêtement Scarface 2.0">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes">
+                                <span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Survêtement Scarface 2.0</h4>
+                            <div class="product-price">
+                                <span class="current" style="color:var(--color-accent);">$155.00</span>
+                                <span class="original">$194.00</span>
+                            </div>
+                            <p class="product-colors">1 couleur disponible</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="maillot">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-jersey.png" alt="Maillot Pro Edition">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Maillot Pro Edition</h4>
+                            <div class="product-price"><span class="current">$78.00</span></div>
+                            <p class="product-colors">4 couleurs disponibles</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="sneakers">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-sneakers.png" alt="Sneakers Urban Elite">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes">
+                                <span>40</span><span>41</span><span>42</span><span>43</span><span>44</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sneakers Urban Elite</h4>
+                            <div class="product-price"><span class="current">$134.00</span></div>
+                            <p class="product-colors">2 couleurs disponibles</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Row 3 -->
+                <div class="product-card" data-category="survetement">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-tracksuit.png" alt="Survêtement Night Rider">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Survêtement Night Rider</h4>
+                            <div class="product-price"><span class="current">$178.00</span></div>
+                            <p class="product-colors">1 couleur disponible</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="hoodie">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <span class="product-badge">Best-seller</span>
+                            <img src="images/product-hoodie.png" alt="Hoodie Urban Legend">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes">
+                                <span>S</span><span>M</span><span>L</span><span>XL</span><span>XXL</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Hoodie Urban Legend</h4>
+                            <div class="product-price"><span class="current">$112.00</span></div>
+                            <p class="product-colors">3 couleurs disponibles</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="maillot">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-jersey.png" alt="Maillot Champions League">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                            <div class="product-sizes"><span>S</span><span>M</span><span>L</span><span>XL</span></div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Maillot Champions League</h4>
+                            <div class="product-price"><span class="current">$89.00</span></div>
+                            <p class="product-colors">2 couleurs disponibles</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card" data-category="accessoire">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/product-sneakers.png" alt="Sac Banane Sport Elite">
+                            <div class="product-actions">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="far fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Sac Banane Sport Elite</h4>
+                            <div class="product-price"><span class="current">$45.00</span></div>
+                            <p class="product-colors">1 couleur disponible</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link next"><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-text">PRIMEO</span>
+                    <p>Votre marque streetwear premium. Qualité exceptionnelle, style unique.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Boutique</h5>
+                    <ul>
+                        <li><a href="collections.html">Nouveautés</a></li>
+                        <li><a href="collections.html">Homme</a></li>
+                        <li><a href="collections.html">Femme</a></li>
+                        <li><a href="collections.html">Accessoires</a></li>
+                        <li><a href="collections.html">Soldes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Informations</h5>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Politique de livraison</a></li>
+                        <li><a href="#">Retours & échanges</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Newsletter</h5>
+                    <p style="font-size:1.3rem;color:rgba(255,255,255,0.5);margin-bottom:1.6rem;line-height:1.7;">
+                        Recevez 10% de réduction.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Votre email">
+                        <button>S'inscrire →</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 PRIMEO. Tous droits réservés.</span>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-paypal"></i><i
+                        class="fab fa-cc-apple-pay"></i><i class="fab fa-cc-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        // Header scroll
+        const header = document.getElementById('siteHeader');
+        window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+        // Back to top
+        const btt = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 400));
+        btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        // Mobile menu
+        document.getElementById('mobileToggle').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('active'));
+        document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('active'));
+        document.getElementById('mobileMenu').addEventListener('click', e => { if (e.target.id === 'mobileMenu') e.target.classList.remove('active'); });
+        // Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.product-card').forEach(card => {
+                    card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+                });
+            });
+        });
+        // Reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); obs.unobserve(e.target); } }), { threshold: 0.15 });
+        reveals.forEach(el => obs.observe(el));
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
