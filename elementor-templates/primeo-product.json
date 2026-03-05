@@ -1,0 +1,188 @@
+{
+    "title": "PRIMEO - Fiche Produit",
+    "type": "page",
+    "version": "0.4",
+    "page_settings": {
+        "template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "padding": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "0",
+                    "bottom": "10",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#000"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='overflow:hidden;'><div style='display:inline-flex;gap:6rem;animation:marquee 25s linear infinite;color:#fff;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;'><span>✓ LIVRAISON GRATUITE DÈS 99$</span><span>✓ PAIEMENT EN 3-4 FOIS SANS FRAIS</span><span>✓ RETOURS GRATUITS</span><span>✓ QUALITÉ PREMIUM</span></div></div><style>@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "30",
+                    "right": "0",
+                    "bottom": "60",
+                    "left": "0"
+                }
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 55,
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "30",
+                            "bottom": "0",
+                            "left": "0"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:flex;gap:12px;'><div style='display:flex;flex-direction:column;gap:10px;width:80px;'><div style='border:2px solid #000;border-radius:8px;overflow:hidden;cursor:pointer;'><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;'></div><div style='border:2px solid #ebebeb;border-radius:8px;overflow:hidden;cursor:pointer;'><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;'></div><div style='border:2px solid #ebebeb;border-radius:8px;overflow:hidden;cursor:pointer;'><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;'></div><div style='border:2px solid #ebebeb;border-radius:8px;overflow:hidden;cursor:pointer;'><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;'></div></div><div style='flex:1;position:relative;border-radius:10px;overflow:hidden;background:#f2f2f2;'><span style='position:absolute;top:16px;left:16px;background:#000;color:#fff;font-size:11px;font-weight:700;padding:6px 14px;border-radius:4px;text-transform:uppercase;z-index:2;'>Nouveau</span><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;'></div></div>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 45
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div><div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;'><span style='font-size:12px;font-weight:600;color:#868686;text-transform:uppercase;letter-spacing:1px;'>PRIMEO</span><div style='color:#f5a623;font-size:13px;'>★★★★½ <span style='color:#868686;font-size:12px;'>(24 avis)</span></div></div><h1 style='font-size:28px;font-weight:800;margin:0 0 12px;'>Survêtement Green Eagles</h1><div style='display:flex;align-items:baseline;gap:10px;margin-bottom:20px;'><span style='font-size:26px;font-weight:700;'>$161.00</span><span style='font-size:13px;color:#868686;'>Taxes incluses</span></div><p style='font-size:14px;color:#666;line-height:1.7;margin-bottom:24px;'>Le survêtement Green Eagles est conçu pour les athlètes urbains recherchant le parfait équilibre entre performance et style. Tissu technique respirant avec finitions premium.</p><div style='margin-bottom:20px;'><label style='font-size:13px;font-weight:600;display:block;margin-bottom:8px;'>Couleur: <strong>Noir / Vert</strong></label><div style='display:flex;gap:8px;'><button style='width:30px;height:30px;border-radius:50%;background:#1a1a1a;border:3px solid #000;cursor:pointer;'></button><button style='width:30px;height:30px;border-radius:50%;background:#2c3e50;border:2px solid #ebebeb;cursor:pointer;'></button><button style='width:30px;height:30px;border-radius:50%;background:#4a4a4a;border:2px solid #ebebeb;cursor:pointer;'></button></div></div><div style='margin-bottom:20px;'><div style='display:flex;justify-content:space-between;margin-bottom:8px;'><label style='font-size:13px;font-weight:600;'>Taille:</label><a href='#' style='font-size:12px;color:#000;text-decoration:underline;'>Guide des tailles</a></div><div style='display:flex;gap:8px;'><button style='width:42px;height:42px;border:2px solid #ebebeb;background:#fff;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;'>S</button><button style='width:42px;height:42px;border:2px solid #000;background:#000;color:#fff;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;'>M</button><button style='width:42px;height:42px;border:2px solid #ebebeb;background:#fff;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;'>L</button><button style='width:42px;height:42px;border:2px solid #ebebeb;background:#fff;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;'>XL</button><button style='width:42px;height:42px;border:2px solid #ebebeb;background:#fff;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;'>XXL</button></div></div><div style='display:flex;gap:10px;margin-bottom:12px;'><button style='flex:1;padding:15px;font-size:14px;font-weight:700;background:#000;color:#fff;border:none;border-radius:6px;cursor:pointer;text-transform:uppercase;'>🛒 Ajouter au Panier</button><button style='width:50px;height:50px;border:2px solid #ebebeb;background:#fff;border-radius:6px;cursor:pointer;font-size:18px;'>♡</button></div><button style='width:100%;padding:15px;font-size:14px;font-weight:700;background:#DB1215;color:#fff;border:none;border-radius:6px;cursor:pointer;text-transform:uppercase;'>Acheter Maintenant</button><div style='margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px;'><div style='display:flex;align-items:center;gap:8px;font-size:12px;color:#666;'><span>🚚</span> Livraison gratuite dès 99$</div><div style='display:flex;align-items:center;gap:8px;font-size:12px;color:#666;'><span>↩️</span> Retours gratuits 30 jours</div><div style='display:flex;align-items:center;gap:8px;font-size:12px;color:#666;'><span>🔒</span> Paiement 100% sécurisé</div><div style='display:flex;align-items:center;gap:8px;font-size:12px;color:#666;'><span>💳</span> Paiement en 3x sans frais</div></div></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "40",
+                    "right": "0",
+                    "bottom": "60",
+                    "left": "0"
+                }
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div><div style='display:flex;border-bottom:2px solid #ebebeb;margin-bottom:30px;'><button style='padding:14px 24px;font-size:14px;font-weight:600;border:none;background:none;border-bottom:2px solid #000;cursor:pointer;'>Description</button><button style='padding:14px 24px;font-size:14px;font-weight:500;border:none;background:none;color:#868686;cursor:pointer;'>Détails & Entretien</button><button style='padding:14px 24px;font-size:14px;font-weight:500;border:none;background:none;color:#868686;cursor:pointer;'>Avis (24)</button><button style='padding:14px 24px;font-size:14px;font-weight:500;border:none;background:none;color:#868686;cursor:pointer;'>Livraison</button></div><div><h3 style='font-size:18px;font-weight:700;margin-bottom:12px;'>Description du produit</h3><p style='font-size:14px;color:#666;line-height:1.8;margin-bottom:16px;'>Le survêtement Green Eagles de PRIMEO combine style streetwear et performance athlétique. Fabriqué à partir d'un mélange de coton premium et de polyester technique.</p><ul style='font-size:14px;color:#666;line-height:2;padding-left:20px;'><li>Tissu technique respirant 280g/m²</li><li>Coupe semi-ajustée (Athletic Fit)</li><li>Zip intégral avec tirette en métal gravée PRIMEO</li><li>Poignets et chevilles côtelés</li><li>2 poches latérales zippées + 1 poche intérieure</li><li>Logo PRIMEO brodé sur la poitrine</li></ul></div></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "60",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#f5f5f5"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:30px;'><h2 style='font-size:28px;font-weight:700;margin:0;'>Vous aimerez aussi</h2><a href='/collections' style='font-size:13px;font-weight:600;color:#000;text-decoration:none;border-bottom:2px solid #000;padding-bottom:3px;'>Voir tout →</a></div><div style='display:grid;grid-template-columns:repeat(4,1fr);gap:20px;'><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#fff;'><img src='https://votre-site.com/wp-content/uploads/product-jersey.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Maillot Black Gold Edition</h4><span style='font-size:14px;font-weight:500;'>$96.00</span></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#fff;'><img src='https://votre-site.com/wp-content/uploads/product-hoodie.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Hoodie Oversize Classic</h4><span style='font-size:14px;font-weight:500;'>$89.00</span></div></div><div><div style='position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#fff;'><span style='position:absolute;top:12px;left:12px;background:#DB1215;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;'>-30%</span><img src='https://votre-site.com/wp-content/uploads/product-sneakers.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Sneakers Wave Runner</h4><div style='display:flex;gap:8px;'><span style='color:#DB1215;font-weight:500;'>$84.00</span><span style='color:#868686;text-decoration:line-through;'>$120.00</span></div></div></div><div><div style='border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#fff;'><img src='https://votre-site.com/wp-content/uploads/product-tracksuit.png' style='width:100%;height:100%;object-fit:cover;'></div><div style='padding:14px 4px 0;'><h4 style='font-size:15px;font-weight:600;margin:0 0 4px;'>Survêtement Scarface 2.0</h4><span style='font-size:14px;font-weight:500;'>$194.00</span></div></div></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elType": "section",
+            "settings": {
+                "layout": "boxed",
+                "padding": {
+                    "unit": "px",
+                    "top": "60",
+                    "right": "0",
+                    "bottom": "30",
+                    "left": "0"
+                },
+                "background_background": "classic",
+                "background_color": "#000"
+            },
+            "elements": [
+                {
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "elType": "widget",
+                            "widgetType": "html",
+                            "settings": {
+                                "html": "<div style='text-align:center;padding:24px 0;font-size:12px;color:rgba(255,255,255,0.35);'><span style='font-size:24px;font-weight:900;letter-spacing:3px;color:#fff;display:block;margin-bottom:20px;'>PRIMEO</span><span>© 2024 PRIMEO. Tous droits réservés.</span></div>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
